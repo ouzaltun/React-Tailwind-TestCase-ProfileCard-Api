@@ -4,7 +4,11 @@ function User({ user }) {
   return (
     <div className="flex flex-row bg-slate-300 shadow-mainshadow min-w-[400px] rounded-xl my-5 mx-5">
       <div className="border-r-2 border-indigo-300">
-        <img className="w-full h-[100%]" src={user.picture.large} alt="" />
+        <img
+          className="w-full h-[100%] object-center"
+          src={user.picture.large}
+          alt=""
+        />
       </div>
       <div className="mx-4">
         <div className="flex justify-end text-xs py-2 mt-3 text-right">
